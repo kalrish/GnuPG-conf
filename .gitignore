@@ -14,6 +14,11 @@
 # Whenever I use alternate keyrings, I stick to the pattern `pubring-*.kbx`.
 /pubring*.kbx
 
+# backups of public keyrings in the keybox format
+#
+# https://lists.gnupg.org/pipermail/gnupg-users/2014-June/049915.html
+pubring*.kbx~
+
 # lock files for public keyrings in the keybox format
 /pubring*.kbx.lock
 
