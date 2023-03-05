@@ -1,1 +1,51 @@
 # man:gitignore(5)
+
+
+# public keyring in the legacy format
+/pubring.gpg
+
+# lock file for public keyring in the legacy format
+/pubring.gpg.lock
+
+# public keyrings in the keybox format
+#
+# GnuPG defaults to `pubring.kbx`;
+# alternate public keyrings may be specified with the options `--keyring` and `--primary-keyring`.
+# Whenever I use alternate keyrings, I stick to the pattern `pubring-*.kbx`.
+/pubring*.kbx
+
+# lock files for public keyrings in the keybox format
+/pubring*.kbx.lock
+
+# trust databases
+#
+# GnuPG defaults to `trustdb.gpg`;
+# alternate trust databases may be specified with the option `--trustdb-name`.
+# Whenever I use alternate trust databases, I stick to the pattern `trustdb-*.gpg`.
+/trustdb*.gpg
+
+# lock files for trust databases
+/trustdb*.gpg.lock
+
+# private keys
+/private-keys-v1.d/
+
+# pre-generated revocation certificates
+#
+# GnuPG generates a revocation certificate for every new key.
+/openpgp-revocs.d/
+
+# ¿?
+/crls.d/
+
+# ¿?
+/random_seed
+
+# ¿? by scdaemon(1)
+/reader_*.status
+
+# ¿?
+/tofu.db
+
+# see [`common/dotlock.c` in GnuPG repository](https://dev.gnupg.org/source/gnupg/browse/master/common/dotlock.c)
+/.#lk*
