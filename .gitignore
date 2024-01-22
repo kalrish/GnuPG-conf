@@ -54,3 +54,6 @@ pubring*.kbx~
 
 # see [`common/dotlock.c` in GnuPG repository](https://dev.gnupg.org/source/gnupg/browse/master/common/dotlock.c)
 /.#lk*
+
+# `gpg-card(1)` command history
+/.gpg-card_history
